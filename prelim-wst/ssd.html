@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSDs</title>
+    <link rel="stylesheet" href="css-folder/items.css">
+</head>
+<body>
+    <button class="back-button" onclick="window.location.href='product.html'">Back</button>
+    <header>
+        <h1>Choose Your SSD</h1>
+    </header>
+    <div id="notification" class="notification hidden">Item added to cart</div>
+    <main>
+        <section class="card-container">
+            <div class="card">
+                <img src="images/ssd1.webp" alt="SSD 1">
+                <h3>Crucial MX500 500GB SATA SSD</h3>
+                <p>Price: ₱200</p>
+                <button onclick="addToCart('Crucial MX500 500GB SATA SSD', 200, 'images/ssd1.webp')">Add to Cart</button>
+            </div>
+            <div class="card">
+                <img src="images/ssd2.webp" alt="SSD 2">
+                <h3>SAMSUNG SSD 980 500 GB nvme</h3>
+                <p>Price: ₱250</p>
+                <button onclick="addToCart('SAMSUNG SSD 980 500 GB nvme', 250, 'images/ssd2.webp')">Add to Cart</button>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

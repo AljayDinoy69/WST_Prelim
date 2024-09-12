@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CPUs</title>
+    <link rel="stylesheet" href="css-folder/items.css">
+</head>
+<body>
+    <button class="back-button" onclick="window.location.href='product.html'">Back</button>
+    <header>
+        <h1>Choose Your CPU</h1>
+    </header>
+    <div id="notification" class="notification hidden">Item added to cart</div>
+    <main>
+        <section class="card-container">
+            <div class="card">
+                <img src="images/cpu1.webp" alt="AMD Ryzen 9 9000 Series">
+                <h3>AMD Ryzen 9 9000 Series</h3>
+                <p>Price: ₱200</p>
+                <button onclick="addToCart('AMD Ryzen 9 9000 Series', 200, 'images/cpu1.webp')">Add to Cart</button>
+            </div>
+            <div class="card">
+                <img src="images/cpu2.webp" alt="Intel Core i9-14900K">
+                <h3>Intel Core i9-14900K Processor</h3>
+                <p>Price: ₱250</p>
+                <button onclick="addToCart('Intel Core i9-14900K', 250, 'images/cpu2.webp')">Add to Cart</button>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

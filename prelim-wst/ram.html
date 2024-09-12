@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAMs</title>
+    <link rel="stylesheet" href="css-folder/items.css">
+</head>
+<body>
+    <button class="back-button" onclick="window.location.href='product.html'">Back</button>
+    <header>
+        <h1>Choose Your RAM</h1>
+    </header>
+    <div id="notification" class="notification hidden">Item added to cart</div>
+    <main>
+        <section class="card-container">
+            <div class="card">
+                <img src="images/ram1.webp" alt="VENGEANCE LPX DDR4 32GB">
+                <h3>VENGEANCE LPX DDR4 32GB</h3>
+                <p>Price: ₱200</p>
+                <button onclick="addToCart('VENGEANCE LPX DDR4 32GB', 200, 'images/ram1.webp')">Add to Cart</button>
+            </div>
+            <div class="card">
+                <img src="images/ram2.webp" alt="BALLISTIX MAX DDR5 32GB">
+                <h3>BALLISTIX MAX DDR5 32GB</h3>
+                <p>Price: ₱250</p>
+                <button onclick="addToCart('BALLISTIX MAX DDR5 32GB', 250, 'images/ram2.webp')">Add to Cart</button>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

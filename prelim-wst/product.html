@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Available Product</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-image: linear-gradient(140deg, #21d8d8 0%, #266565 50%, #1b2a2a 75%);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        .container {
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1 {
+            margin-bottom: 3%;
+            border: 5px;
+            border-radius: 10px;
+            padding: 10px;
+            color: white;
+            font-weight: 900;
+            background-image: linear-gradient(140deg,  #1b2a2a 0%, #266565 50%, #216565 75%);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        .product-item {
+            text-align: center;
+        }
+
+        .product-link {
+            display: block;
+            width: 150px;
+            height: 150px;
+            text-decoration: none;
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .product-link:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .cpu {
+            background-image: url('images/sam-cpu.webp');
+        }
+
+        .gpu {
+            background-image: url('images/sam-gpu.webp');
+        }
+
+        .mobo {
+            background-image: url('images/sam-mobo.webp');
+        }
+
+        .ram {
+            background-image: url('images/sam-ram.webp');
+        }
+
+        .ssd {
+            background-image: url('images/sam-ssd.webp');
+        }
+
+        .label {
+            margin-top: 10px;
+            font-weight: bold;
+            color: white;
+            font-weight: 900;
+        }
+
+        a:link, a:visited {
+            background-color: transparent;
+            border: 5px solid #1e2e2e;
+            padding: 20px 30px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 10px;
+        }
+
+        a:hover, a:active {
+            background-color: #1e2e2e;
+        }
+
+        /* Style for the back button */
+        .back-button {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: #1b2a2a;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .back-button:hover {
+            background-color: #266565;
+        }
+    </style>
+</head>
+<body>
+    <button class="back-button" onclick="window.location.href='index.html'">Back</button>
+    
+    <center>
+        <h1>Choose what item:</h1>
+        <div class="container">
+            <div class="product-item">
+                <a href="cpu.html" class="product-link cpu"></a>
+                <div class="label">CPUs</div>
+            </div>
+            <div class="product-item">
+                <a href="gpu.html" class="product-link gpu"></a>
+                <div class="label">GPUs</div>
+            </div>
+            <div class="product-item">
+                <a href="mobo.html" class="product-link mobo"></a>
+                <div class="label">Motherboards</div>
+            </div>
+            <div class="product-item">
+                <a href="ram.html" class="product-link ram"></a>
+                <div class="label">RAM</div>
+            </div>
+            <div class="product-item">
+                <a href="ssd.html" class="product-link ssd"></a>
+                <div class="label">SSDs</div>
+            </div>
+        </div>
+    </center>
+</body>
+</html>

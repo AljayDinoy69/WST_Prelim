@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motherboards</title>
+    <link rel="stylesheet" href="css-folder/items.css">
+</head>
+<body>
+    <button class="back-button" onclick="window.location.href='product.html'">Back</button>
+    <header>
+        <h1>Choose Your Motherboard</h1>
+    </header>
+    <div id="notification" class="notification hidden">Item added to cart</div>
+    <main>
+        <section class="card-container">
+            <div class="card">
+                <img src="images/Mobo1.webp" alt="Gigabyte Z490 GAMING X">
+                <h3>Gigabyte Z490 GAMING X</h3>
+                <p>Price: ₱200</p>
+                <button onclick="addToCart('Gigabyte Z490 GAMING X', 200, 'images/Mobo1.webp')">Add to Cart</button>
+            </div>
+            <div class="card">
+                <img src="images/Mobo2.webp" alt="Aurus X870E Aurus Master">
+                <h3>Aurus X870E Aurus Master</h3>
+                <p>Price: ₱250</p>
+                <button onclick="addToCart('Aurus X870E Aurus Master', 250, 'images/Mobo2.webp')">Add to Cart</button>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

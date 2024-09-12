@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPUs</title>
+    <link rel="stylesheet" href="css-folder/items.css">
+</head>
+<body>
+    <button class="back-button" onclick="window.location.href='product.html'">Back</button>
+    <header>
+        <h1>Choose Your GPU</h1>
+    </header>
+    <div id="notification" class="notification hidden">Item added to cart</div>
+    <main>
+        <section class="card-container">
+            <div class="card">
+                <img src="images/gpu1.webp" alt="Asus GForce RTX 4090">
+                <h3>Asus GForce RTX 4090</h3>
+                <p>Price: ₱200</p>
+                <button onclick="addToCart('Asus GForce RTX 4090', 200, 'images/gpu1.webp')">Add to Cart</button>
+            </div>
+            <div class="card">
+                <img src="images/gpu2.webp" alt="AMD Radeon RX 7800 XT">
+                <h3>AMD Radeon RX 7800 XT</h3>
+                <p>Price: ₱250</p>
+                <button onclick="addToCart('AMD Radeon RX 7800 XT', 250, 'images/gpu2.webp')">Add to Cart</button>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
